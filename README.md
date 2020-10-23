@@ -20,6 +20,7 @@ Liste des commandes modérateurs utilisable uniquement par ceux qui ont une perm
 - unban : unban un utilisateur à partir de son identifiant.
 - unmute : unmute un utilisateur.
 - eval : permet de évaluer une commande en l'éxécutant.
+- reboot : permet de stopper le bot, avec pm2 cette commande permet de redémarrer le bot
 
 ## Installation
 
