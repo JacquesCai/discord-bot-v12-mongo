@@ -19,6 +19,7 @@ Liste des commandes modérateurs utilisable uniquement par ceux qui ont une perm
 - mute : mute un utilisateur sur une période de temps en (s,m,h,j).
 - unban : unban un utilisateur à partir de son identifiant.
 - unmute : unmute un utilisateur.
+- eval : permet de évaluer une commande en l'éxécutant.
 
 ## Installation
 
