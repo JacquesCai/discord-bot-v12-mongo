@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const config = require("../../config.js");
 const fs = require("fs");
 const List = fs.readdirSync("./commands");
 
@@ -11,7 +10,7 @@ module.exports.run = (client, message, args) => {
       .addField(
         "Liste des commandes",
         `La liste de toutes les commandes disponibles 
-            et leurs sous-catégories\nFaire \`${config.PREFIX}help <commande/alias>\` pour 
+            et leurs sous-catégories\nFaire \`${client.config.PREFIX}help <commande/alias>\` pour 
             plus d'informations à propos d'une commande.`
       );
 
@@ -52,8 +51,8 @@ module.exports.run = (client, message, args) => {
       .addField(
         "Utilisation",
         command.help.usage
-          ? `${config.PREFIX}${command.help.name} ${command.help.usage}`
-          : `${config.PREFIX}${command.help.name}`,
+          ? `${client.config.PREFIX}${command.help.name} ${command.help.usage}`
+          : `${client.config.PREFIX}${command.help.name}`,
         true
       );
 

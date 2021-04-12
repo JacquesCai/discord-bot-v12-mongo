@@ -1,6 +1,6 @@
 # Discord-Bot
 
-Ce prjet est un template de bot discord en node.js avec le module node discord.js qui permet d'intéragir facilement avec l'API Discord.
+Ce prjet est un template de bot discord en node.js avec le module node discord.js qui permet d'intéragir facilement avec l'API Discord et une database Mongodb.
 
 ## Description
 
@@ -19,7 +19,8 @@ Liste des commandes modérateurs utilisable uniquement par ceux qui ont une perm
 - mute : mute un utilisateur sur une période de temps en (s,m,h,j).
 - unban : unban un utilisateur à partir de son identifiant.
 - unmute : unmute un utilisateur.
-- reboot : permet de stopper le bot, avec pm2 cette commande permet de redémarrer le bot
+- reboot : permet de stopper le bot, avec pm2 cette commande permet de redémarrer le bot*
+- config : pour paramétrer le bot pour modifier les configuration du bot.
 
 ## Installation
 
@@ -32,11 +33,16 @@ Il faut ensuite installer les packages node_modules avec la commande suivante :
 npm install
 ```
 
+### Discord
+
 Ensuite il faut renseigner un token de bot discord en allant sur le site `https://discord.com/developers/applications` en créant une application puis crée un bot dans l'onglet BOT.
 
-Ce Token doit être renseigné dans le fichier .env que vous devez créer.
+Ce Token doit être renseigné dans le fichier .env crée en dupliquant le fichier .env.example
 
-Dans le fichier config.js, choisisez un préfix pour votre bot.
+### Mongoose
+
+Après il faut renseigner également une connection à une database Mongodb au bot dans le fichier .env.
+Pour facilement créer une database, suivez le tuto suivant sur le site `https://docs.atlas.mongodb.com/`.
 
 ## Lancement
 
