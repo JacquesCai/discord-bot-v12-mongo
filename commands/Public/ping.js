@@ -1,7 +1,16 @@
+const {MessageEmbed} = require("discord.js");
+
 module.exports.run = (client, message) => {
-    let début = Date.now();
-    message.channel.send('Ping')
-        .then((m) => m.edit(`Pong : **${Date.now() - début}**ms`));
+    const botPing = Math.round(client.ws.ping);
+    message.channel.send('pong :ping_pong:').then(m => {
+        const embed = new MessageEmbed()
+            .setTitle('Latencies')
+            .setColor('#1AECFF')
+            .addField('API', botPing + 'ms')
+            .addField('Bot', (m.createdTimestamp - message.createdTimestamp) + 'ms');
+
+        message.channel.send(embed);
+    });
 };
 
 module.exports.help = {
