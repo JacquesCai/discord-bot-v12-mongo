@@ -1,6 +1,6 @@
 # Discord-Bot
 
-Ce prjet est un template de bot discord en node.js avec le module node discord.js qui permet d'intéragir facilement avec l'API Discord et une database Mongodb.
+Ce projet est un template de bot discord en node.js avec le module node discord.js qui permet d'intéragir facilement avec l'API Discord et une database Mongodb.
 
 ## Description
 
