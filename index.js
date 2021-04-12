@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const config = require('./config.js');
 const { loadBot } = require('./util/loader');
+require("dotenv").config({
+  path: ".env",
+});
 
 const client = new Discord.Client();
 
@@ -8,4 +11,4 @@ const client = new Discord.Client();
 
 loadBot(client);
 
-client.login(config.TOKEN);
+client.login(process.env.TOKEN);

@@ -34,7 +34,9 @@ npm install
 
 Ensuite il faut renseigner un token de bot discord en allant sur le site `https://discord.com/developers/applications` en créant une application puis crée un bot dans l'onglet BOT.
 
-Ce Token doit être renseigné dans le fichier config.js avec un préfix pour votre bot.
+Ce Token doit être renseigné dans le fichier .env que vous devez créer.
+
+Dans le fichier config.js, choisisez un préfix pour votre bot.
 
 ## Lancement
 
